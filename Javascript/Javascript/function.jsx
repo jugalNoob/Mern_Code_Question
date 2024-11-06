@@ -1,6 +1,63 @@
+// https://dev.to/aelassas/functional-programming-in-typescript-575j
 
 
-:::::::All Function In Jvaascript
+
+JavaScript Built-in Higher-Order Functions
+map
+filter
+reduce
+forEach
+find
+findIndex
+some
+every
+flatMap
+sort
+concat
+slice
+splice
+Timer and Execution Functions
+setTimeout
+setInterval
+clearTimeout
+clearInterval
+Function Binding and Execution Control
+bind
+call
+apply
+Common Functional Programming Functions (usually in libraries)
+compose
+pipe
+curry
+partial
+memoize
+debounce
+throttle
+JavaScript Function Types and Patterns
+Async Functions: Functions that handle asynchronous code, often using async/await.
+Immediately Invoked Function Expression (IIFE): A function that runs as soon as it’s defined.
+Express Functions: Functions within Express.js (e.g., middleware, route handlers).
+Closure Functions: Functions that capture the lexical scope in which they were defined.
+Arrow Functions: Concise function expressions with the => syntax.
+Generator Functions: Functions that can yield multiple values using the * syntax and yield keyword.
+Anonymous Functions: Functions without a name, often assigned to variables or passed as arguments.
+Function Scope and Length
+Function Scope: Refers to the scope in which variables and functions are accessible.
+Function Length: 
+
+
+
+
+
+
+
+
+
+
+
+
+:::::::All Function In Jvaascript:::::::::::::::::::::
+
 
 let person1 = {  //;JavaScript Factory Functions
   firstName: 'John',

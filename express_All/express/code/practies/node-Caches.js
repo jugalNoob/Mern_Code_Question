@@ -35,6 +35,54 @@ app.listen(port, () => {
 
 
 
+/// Advance Api get and Fast for user :::::::: ...............
+
+const express = require('express');
+const NodeCache = require("node-cache");
+// const fetch = require("node-fetch");
+
+const app = express();
+const port = process.env.PORT || 9000;
+
+// Initialize node-cache
+const myCache = new NodeCache();
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the caching API!");
+});
+
+app.get("/api", async (req, res) => {
+  try {
+    // Fetch data from the external API
+    const response = await fetch("https://jsonplaceholder.typicode.com/albums");
+    const data = await response.json();
+
+    // Cache the data with a key and a time-to-live (TTL) of 10 seconds
+    const success = myCache.set("myKey", data, 10); // TTL in seconds
+
+    res.send({ success, message: "Data cached!", data });
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    res.status(500).send({ error: "Failed to fetch data" });
+  }
+});
+
+// Cache retrieval route
+app.get("/cache", (req, res) => {
+  const cachedData = myCache.get("myKey");
+  if (cachedData) {
+    res.send({ cachedData });
+  } else {
+    res.send({ message: "Cache expired or not set!" });
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+});
+
+
+
 
 // Explanation
 // Express Server: The server listens on port 3000 or any port specified in process.env.PORT.
