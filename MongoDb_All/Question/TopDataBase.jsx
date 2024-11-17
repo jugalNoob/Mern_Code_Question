@@ -180,3 +180,25 @@ amount of data by adding more servers to distribute the load.
 
 ...::These characteristics make MongoDB suitable for applications that require high scalability,
 flexibility in data structure, and the ability to handle large volumes of data across distributed systems.
+
+
+
+
+All :::::::::::::::::::::::::::::::::::::::
+
+This image shows an overview of the modern database ecosystem, categorizing different types of databases based on functionality and data structure. Here’s a breakdown of the categories:
+
+SQL
+Traditional RDBMSs: Includes relational databases like PostgreSQL, MySQL, SQLite, Oracle, Microsoft SQL Server, IBM DB2, and Amazon RDS.
+"Modern" SQL DBs: These are newer SQL databases that offer horizontal scaling and cloud-native features, including CockroachDB, VoltDB, Supabase, MariaDB, Timescale, PlanetScale, and Neon.
+OLAP Database: Databases optimized for online analytical processing, such as ClickHouse, DuckDB, Amazon Athena, and StarRocks.
+Data Warehouse: Large-scale data storage and analysis solutions, including Snowflake, Google BigQuery, Amazon Redshift, and Azure Synapse Analytics.
+NoSQL
+Document: Document-oriented databases like MongoDB, CouchDB, Amazon DocumentDB, and Cloud Firestore.
+Graph: Graph databases for handling networked data, such as Neo4j, Dgraph, and ArangoDB.
+Vector: Specialized databases for vector data, like Pinecone, Milvus, Chroma, and Weaviate.
+Time-Series: Databases optimized for time-series data, including InfluxDB, Timescale, DolphinDB, and Prometheus.
+Search: Search-optimized databases like Elasticsearch, Algolia, Meilisearch, and Solr.
+Key-Value: Key-value databases for fast storage and retrieval, including Redis, Memcached, and Amazon DynamoDB.
+Multi-Model: Databases supporting multiple data models, such as ArangoDB, Fauna, TileDB, and SurrealDB.
+Wide Column: Databases suited for large, sparse data tables, including Cassandra, Apache HBase, and Scylla.
