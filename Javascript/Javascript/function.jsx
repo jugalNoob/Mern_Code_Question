@@ -46,6 +46,11 @@ Function Scope: Refers to the scope in which variables and functions are accessi
 Function Length: 
 
 
+::::::: curry function all in one  :::::::::::::
+
+
+
+
 
 
 

@@ -101,6 +101,8 @@ Consistency: Every read receives the latest write.
 Availability: Every request gets a response, whether or not it’s the latest.
 Partition Tolerance: The system continues to operate despite network partitions.
 Example: A distributed database may sacrifice consistency for availability to ensure it remains operational during network failures.
+
+
 8. What is Lamport Logical Clock?:
 Lamport Logical Clock is an algorithm used to order events in a distributed system. It assigns timestamps to events to ensure a consistent event sequence across multiple systems.
 
