@@ -1,3 +1,119 @@
+Q what is RestAPi? 
+
+When to use it : When you need a simple stateless api that works
+well with http methods 
+
+. and best for CRUD operations
+
+
+Stateless: Each request contains all the information needed to process it.
+Resource-Based: Each resource (e.g., users, products) is identified by a unique URL.
+Uses HTTP methods:
+GET for retrieving data
+POST for creating data
+PUT for updating data
+DELETE for removing data
+
+const express = require('express');
+const app = express();
+app.use(express.json());
+
+let users = [{ id: 1, name: 'John Doe' }];
+
+// GET request to fetch users
+app.get('/users', (req, res) => {
+  res.json(users);
+});
+
+// POST request to add a user
+app.post('/users', (req, res) => {
+  const newUser = req.body;
+  users.push(newUser);
+  res.status(201).json(newUser);
+});
+
+app.listen(3000, () => console.log('REST API running on port 3000'));
+
+
+Use Case:
+Building a service for user management in a web app.
+CRUD operations in an e-commerce app for products, orders, etc.
+
+
+
+Q Soap APi ?
+
+OAP (Simple Object Access Protocol) is a protocol for building APIs
+ that use XML-based messages for communication.
+ It is more rigid and designed for structured, secure communication.
+
+
+ Key Features:
+Uses XML for message formatting.
+Supports advanced features like built-in error handling and security via WS-Security.
+Requires a WSDL (Web Services Description Language) file for defining the API.
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://example.com/webservice">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetUser>
+         <web:UserID>123</web:UserID>
+      </web:GetUser>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Use Case:
+Banking services for secure transactions.
+Integrations with legacy systems.
+
+
+
+Q GRaphQl API?
+
+GraphQL is a query language for APIs that allows clients to request only the data they need. It gives more flexibility compared to REST.
+
+Key Features:
+Single endpoint for all operations (e.g., /graphql).
+Clients specify the exact data they want in the query.
+Supports real-time data with subscriptions.
+
+Use Case:
+Building a mobile app with specific data requirements.
+Querying complex relational data in social media apps.
+
+
+Q Websocket API?
+
+WebSocket is a communication protocol that provides full-duplex
+ communication channels over a single TCP connection,
+  enabling real-time data exchange.
+
+Key Features:
+Persistent connection between client and server.
+Ideal for real-time applications like chats, gaming, or live data feeds.
+
+
+Use Case:
+Chat Applications: Real-time messaging between users.
+Stock Market Feeds: Real-time updates of stock prices.
+Collaborative Tools: Collaborative editing in apps like Google Docs.
+
+
+
+Feature	   REST API   	SOAP API	       GraphQL API	   WebSocket API 
+
+Protocol	   HTTP	    :XML-based Protocol	    HTTP	            TCP
+
+Flexibility	  Moderate	   :Low	               High	          High
+
+Message Format	JSON (mostly) 	:XML	    Query language	   Binary or text
+
+eal-Time	        :No	           :No	  :Partially (subscriptions) 	:Yes
+
+Use Cases	 :Web services	:Secure transactions	:Complex data queries	:Real-time apps
+
+
 
 Q 12 Tipes for API Security?
 ANS: 1::useHTTPS 

@@ -361,3 +361,322 @@ Variables defined inside a function are not accessible
     function myFunction() {
     // code here can also use carName
     }]
+
+
+:::::::::::::::::::: New function   Code :::::::::::::::::::::::::::::::::::::::::::
+
+
+
+1. Function Declaration
+
+A function declaration is a named function that is defined using the function keyword. It is hoisted,
+ meaning you can call the function even before its definition in the code.
+
+ // Function Declaration
+function greet() {
+  console.log("Hello, World!");
+}
+
+greet(); // Output: Hello, World!
+
+// Function Declaration is hoisted
+sayHello(); // Output: Hello!
+function sayHello() {
+  console.log("Hello!");
+}
+
+
+
+
+
+1. Function Declaration
+A function declaration is a named function that is defined using the function keyword. It is hoisted, meaning you can call the function even before its definition in the code.
+
+Code Example:
+javascript
+Copy code
+// Function Declaration
+function greet() {
+  console.log("Hello, World!");
+}
+
+greet(); // Output: Hello, World!
+
+// Function Declaration is hoisted
+sayHello(); // Output: Hello!
+function sayHello() {
+  console.log("Hello!");
+}
+
+
+2. Function Expression
+A function expression defines a function and assigns it to a variable. It is not hoisted, 
+meaning you cannot call it before its definition.
+
+
+// Function Expression
+const greet = function () {
+  console.log("Hello, Function Expression!");
+};
+
+greet(); // Output: Hello, Function Expression!
+
+// Function Expression is not hoisted
+// sayHello(); // Error: Cannot access 'sayHello' before initialization
+const sayHello = function () {
+  console.log("Hello!");
+};
+
+
+
+
+1. Function Declaration
+A function declaration is a named function that is defined using the function keyword. It is hoisted, meaning you can call the function even before its definition in the code.
+
+Code Example:
+javascript
+Copy code
+// Function Declaration
+function greet() {
+  console.log("Hello, World!");
+}
+
+greet(); // Output: Hello, World!
+
+// Function Declaration is hoisted
+sayHello(); // Output: Hello!
+function sayHello() {
+  console.log("Hello!");
+}
+2. Function Expression
+A function expression defines a function and assigns it to a variable. It is not hoisted, meaning you cannot call it before its definition.
+
+Code Example:
+javascript
+Copy code
+// Function Expression
+const greet = function () {
+  console.log("Hello, Function Expression!");
+};
+
+greet(); // Output: Hello, Function Expression!
+
+// Function Expression is not hoisted
+// sayHello(); // Error: Cannot access 'sayHello' before initialization
+const sayHello = function () {
+  console.log("Hello!");
+};
+3. Scope
+Scope determines the accessibility of variables and functions. JavaScript has two
+ main types of scope: Global Scope and Local Scope.
+
+a. Global Scope
+Variables declared outside any function or block are in the global scope. 
+They are accessible throughout the program.
+
+
+// Global Scope
+let globalVar = "I am global!";
+
+function displayGlobal() {
+  console.log(globalVar); // Accessing global variable
+}
+
+displayGlobal(); // Output: I am global!
+
+// Modifying global variable
+globalVar = "I am modified globally!";
+console.log(globalVar); // Output: I am modified globally!
+
+
+
+1. Function Declaration
+A function declaration is a named function that is defined using the function keyword. It is hoisted, meaning you can call the function even before its definition in the code.
+
+Code Example:
+javascript
+Copy code
+// Function Declaration
+function greet() {
+  console.log("Hello, World!");
+}
+
+greet(); // Output: Hello, World!
+
+// Function Declaration is hoisted
+sayHello(); // Output: Hello!
+function sayHello() {
+  console.log("Hello!");
+}
+2. Function Expression
+A function expression defines a function and assigns it to a variable. It is not hoisted, meaning you cannot call it before its definition.
+
+Code Example:
+javascript
+Copy code
+// Function Expression
+const greet = function () {
+  console.log("Hello, Function Expression!");
+};
+
+greet(); // Output: Hello, Function Expression!
+
+// Function Expression is not hoisted
+// sayHello(); // Error: Cannot access 'sayHello' before initialization
+const sayHello = function () {
+  console.log("Hello!");
+};
+3. Scope
+Scope determines the accessibility of variables and functions. JavaScript has two main types of scope: Global Scope and Local Scope.
+
+a. Global Scope
+Variables declared outside any function or block are in the global scope. They are accessible throughout the program.
+
+Code Example:
+javascript
+Copy code
+// Global Scope
+let globalVar = "I am global!";
+
+function displayGlobal() {
+  console.log(globalVar); // Accessing global variable
+}
+
+displayGlobal(); // Output: I am global!
+
+// Modifying global variable
+globalVar = "I am modified globally!";
+console.log(globalVar); // Output: I am modified globally!
+
+
+b. Local Scope
+Variables declared inside a function or block are in the local scope. They are accessible 
+only within that function or block.
+
+
+function localExample() {
+  let localVar = "I am local!";
+  console.log(localVar); // Accessible here
+}
+
+localExample(); // Output: I am local!
+
+// console.log(localVar); // Error: localVar is not defined
+
+
+
+
+1. Function Declaration
+A function declaration is a named function that is defined using the function keyword. It is hoisted, meaning you can call the function even before its definition in the code.
+
+Code Example:
+javascript
+Copy code
+// Function Declaration
+function greet() {
+  console.log("Hello, World!");
+}
+
+greet(); // Output: Hello, World!
+
+// Function Declaration is hoisted
+sayHello(); // Output: Hello!
+function sayHello() {
+  console.log("Hello!");
+}
+2. Function Expression
+A function expression defines a function and assigns it to a variable. It is not hoisted, meaning you cannot call it before its definition.
+
+Code Example:
+javascript
+Copy code
+// Function Expression
+const greet = function () {
+  console.log("Hello, Function Expression!");
+};
+
+greet(); // Output: Hello, Function Expression!
+
+// Function Expression is not hoisted
+// sayHello(); // Error: Cannot access 'sayHello' before initialization
+const sayHello = function () {
+  console.log("Hello!");
+};
+3. Scope
+Scope determines the accessibility of variables and functions. JavaScript has two main types of scope: Global Scope and Local Scope.
+
+a. Global Scope
+Variables declared outside any function or block are in the global scope. They are accessible throughout the program.
+
+Code Example:
+javascript
+Copy code
+// Global Scope
+let globalVar = "I am global!";
+
+function displayGlobal() {
+  console.log(globalVar); // Accessing global variable
+}
+
+displayGlobal(); // Output: I am global!
+
+// Modifying global variable
+globalVar = "I am modified globally!";
+console.log(globalVar); // Output: I am modified globally!
+b. Local Scope
+Variables declared inside a function or block are in the local scope. They are accessible only within that function or block.
+
+Code Example:
+javascript
+Copy code
+function localExample() {
+  let localVar = "I am local!";
+  console.log(localVar); // Accessible here
+}
+
+localExample(); // Output: I am local!
+
+// console.log(localVar); // Error: localVar is not defined
+4. Global and Local Scope Interaction
+
+Global variables can be accessed in local scope, but local variables cannot be accessed in global scope.
+
+
+let globalVar = "I am global!";
+
+function testScope() {
+  let localVar = "I am local!";
+  console.log(globalVar); // Accessible
+  console.log(localVar);  // Accessible
+}
+
+testScope();
+
+// console.log(localVar); // Error: localVar is not defined
+
+
+5. Block Scope with let and const
+Variables declared with let and const are block-scoped, meaning they are limited
+ to the block in which they are defined.
+
+ if (true) {
+  let blockVar = "I am block scoped!";
+  console.log(blockVar); // Accessible
+}
+
+// console.log(blockVar); // Error: blockVar is not defined
+
+
+
+
+
+
+    Feature  	             Example   	          Hoisted     ScopeAccessible	   Reassignment
+
+    FunctionDeclaration	  :function greet() {}	 :Yes	    Global, Local	          N/A
+
+    Function Expression	  const greet = function	No	    Block/Local	            Yes
+
+    Global Scope	           let x = 10	          N/A	     Everywhere          	  Yes
+
+    Local Scope	           Inside a function	      N/A	    Inside Function	      Yes
