@@ -49,6 +49,26 @@ Function Length:
 ::::::: curry function all in one  :::::::::::::
 
 
+function curry() {
+   return function(name) {
+      console.log(`Name: ${name}`);
+      return function(email) {
+         console.log(`Email: ${email}`);
+         return function(username) {
+            console.log(`Username: ${username}`);
+            return function(age) {
+               console.log(`Age: ${age}`);
+            }
+         }
+      }
+   }
+}
+
+// Call the function
+curry()('Jugal')('jugalsharm@gmail.com')('jugal786')('45');
+
+
+
 
 
 ::: function Closure all important   ::::::::::::::::::::::::::::::
