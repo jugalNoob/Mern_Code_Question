@@ -25,6 +25,17 @@ let voteable = (age < 18) ? "Too young":"Old enough";
 
 
 
+
+:::::::::::::::::::::::::: event handler in loops ............
+// for(let i=0; i<5; i++){
+
+//    setTimeout(()=>{
+
+//       console.log(i)
+//    },1000*i)
+// }
+
+
     |||||||Conditional Statements ||||||||||||||
 
 
@@ -38,6 +49,9 @@ else if
 
     
 ::::Types of error in javscript ||||||||||||||||||||||||||||||||
+
+
+    
 
 
 
