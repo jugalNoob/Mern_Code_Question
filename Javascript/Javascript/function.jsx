@@ -49,17 +49,69 @@ Function Length:
 ::::::: curry function all in one  :::::::::::::
 
 
+function curry() {
+   return function(name) {
+      console.log(`Name: ${name}`);
+      return function(email) {
+         console.log(`Email: ${email}`);
+         return function(username) {
+            console.log(`Username: ${username}`);
+            return function(age) {
+               console.log(`Age: ${age}`);
+            }
+         }
+      }
+   }
+}
+
+// Call the function
+curry()('Jugal')('jugalsharm@gmail.com')('jugal786')('45');
 
 
 
 
 
+::: function Closure all important   ::::::::::::::::::::::::::::::
+Q Key use Case of closures  --> Data Privacy 
+
+Ans:: Closure are commonly used to create private var that canot be 
+accessed from out the function 
+
+function createCounter(){
+   let count=0
+
+   return{
+      increment: function(){count++},
+      getcount: function(){return count}
+     
+   }
+
+
+what is a javscript closure ? ..........................................
+
+function outer(){
+   let count=0
+
+  return function inner(){
+     count++
+
+     return count
+   }
+}
+let cont=outer()
+console.log(cont()) // 1
+console.log(cont()) // 2
 
 
 
+:::::::::::::::::::::::::: event handler in loops ............
+// for(let i=0; i<5; i++){
 
+//    setTimeout(()=>{
 
-
+//       console.log(i)
+//    },1000*i)
+// }
 
 :::::::All Function In Jvaascript:::::::::::::::::::::
 
