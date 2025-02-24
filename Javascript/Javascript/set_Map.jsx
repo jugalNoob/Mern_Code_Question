@@ -29,5 +29,26 @@ Property	Description
 size	Returns the number of elements in a Set
 
 21::WeakSet
+No iteration: Unlike Set, WeakSet does not have methods like keys(), values(), or entries(), and it is not iterable.
+Methods of WeakMap:
+set(key, value): Adds a key-value pair to the WeakMap.
+
+get(key): Retrieves the value associated with a key.
+
+has(key): Checks if a key exists in the WeakMap.
+
+delete(key): Removes a key-value pair from the WeakMap.
+
+
 
 22:WeakMaps
+No iteration: Unlike Map, WeakMap does not have methods like keys(), values(), or entries(), and it is not iterable.
+
+Methods of WeakMap:
+set(key, value): Adds a key-value pair to the WeakMap.
+
+get(key): Retrieves the value associated with a key.
+
+has(key): Checks if a key exists in the WeakMap.
+
+delete(key): Removes a key-value pair from the WeakMap.
