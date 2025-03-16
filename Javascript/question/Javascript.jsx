@@ -57,7 +57,7 @@ Dynamic import – show you how to import a module dynamically via the function-
 Top-level await – explain the top-level await module and its use cases.
 
 
-:::::::::::::::::::::::  Important  ----------------------->>
+:::::::::::::::::::::::  Important error   ----------------------->>
 Section 14. Error handling
 try…catch – show you how to handle exceptions gracefully.
 try…catch…finally – learn how to catch exceptions and execute a block whether the exceptions occur or not.

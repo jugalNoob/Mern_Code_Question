@@ -156,7 +156,7 @@ function getNames() {//Returning multiple values from an function using an objec
 }
 let { firstName, lastName } = getNames()
 
-00::function CallBack
+00::function CallBack  ::::::::::::::::::::::::::
 function one(a, b) {
     console.log(a + b);
 }
@@ -174,7 +174,7 @@ call(one, 2, 3); // Outputs: 5
 call(two, 3, 3); // Outputs: 5
 
 
-:::Const Function 
+:::Const Function  ::::::::::::::::::::::::::::::::::::::
 const one = () => () => () => console.log(5, 6, 7);
 one()()();
 
@@ -221,8 +221,37 @@ let one=function(){
 one()
 
 7::function call
+
+2. call() Method
+❓ What is the call() method, and how does it work?
+✅ call() invokes a function with a specific this value and individual arguments.
+
+function greet(age) {
+  console.log(`Hello, my name is ${this.name} and I am ${age} years old.`);
+}
+
+const person = { name: "Alice" };
+greet.call(person, 25);
+
+
+4. bind() Method
+❓ What does the bind() method do?
+✅ bind() returns a new function with this perma
+
+const boundGreet = greet.bind(person);
+boundGreet(35);
+
+
+
 8::function bind
 9::function apply
+
+3. apply() Method
+❓ How is apply() different from call()?
+✅ apply() is the same as call(), but arguments are passed as an array.
+greet.apply(person, [30]);
+
+
 The apply() Method with Arguments
 const person = {
   fullName: function(city, country) {
